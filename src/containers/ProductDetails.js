@@ -37,14 +37,15 @@ const ProductDetails = () => {
                             </div>
                             <div className="details col-md-6">
                                 <h3 className="product-title">{title}</h3>
-
-                                <p className="product-description">{description}</p>
-                                <h4 className="price">Price: <span>{price}</span></h4>
-                                <h5 className="category">Category: {category}
+                                <h5 className="category text-muted">Category: {category}
                                 </h5>
 
+                                <p className="product-description py-3">{description}</p>
+                                <h4 className="price text-light bg-success d-inline-block p-2 mb-3 rounded-lg">Price: <span>${price}</span></h4>
+                                
+
                                 <div className="action">
-                                    <button className="add-to-cart btn btn-primary" type="button">add to cart</button>
+                                    <button className="add-to-cart btn btn-primary btn-lg" type="button">add to cart</button>
                                     <button className="like btn btn-default" type="button"><span className="fa fa-heart"></span></button>
                                 </div>
                             </div>
